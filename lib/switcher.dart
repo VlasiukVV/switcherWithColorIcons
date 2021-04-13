@@ -61,12 +61,12 @@ class Switcher extends StatefulWidget {
       : _width = size == SwitcherSize.small
             ? 55
             : size == SwitcherSize.medium
-                ? 67
+                ? 80
                 : 105,
         _height = size == SwitcherSize.small
             ? 20
             : size == SwitcherSize.medium
-                ? 32
+                ? 37
                 : 40,
         _switcherButtonOffset = size == SwitcherSize.small
             ? switcherButtonBoxShape == BoxShape.rectangle
@@ -93,10 +93,10 @@ class Switcher extends StatefulWidget {
                     : 15
             : size == SwitcherSize.medium
                 ? switcherButtonBoxShape == BoxShape.rectangle
-                    ? 12
+                    ? 22
                     : switcherButtonRadius < 4
-                        ? 10
-                        : 15
+                        ? 17
+                        : 25
                 : size == SwitcherSize.large
                     ? switcherButtonBoxShape == BoxShape.rectangle
                         ? 28
